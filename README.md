@@ -116,7 +116,7 @@ Download `index.html` and open it in any browser. All images are embedded. No se
 Visit the live version at `https://raghav26102000.github.io/subspace-product-teardown`
 
 **Option 3 &mdash; PDF**
-`Subspace.money-Product Teardown 2026.pdf` is a print-ready version of the full report.
+`Subspace_Product_Teardown_Raghav_Agrawal.pdf` is a print-ready version of the full report.
 
 ---
 
