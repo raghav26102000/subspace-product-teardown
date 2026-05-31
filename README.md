@@ -1,241 +1,168 @@
-# Product Teardown: Subspace.money
+# Subspace.money &mdash; Product Teardown
 
-An evidence-backed analysis of Subspace.money's product strategy, trust architecture, user experience, monetization model, retention mechanics, and long-term defensibility.
+**A deep product teardown of India's subscription sharing platform, prepared as a take-home assignment for a Product Intern role.**
 
-This teardown combines direct product exploration, annotated screenshots, user review mining, behavioral psychology, competitive benchmarking, and product strategy frameworks to identify the highest-leverage opportunities for growth and product improvement.
-
----
-
-## Highlights
-
-- 📄 23-page product teardown report
-- 🎯 5 high-impact product recommendations
-- 📊 Prioritization matrix with implementation roadmap
-- 🧠 Founder-focused strategic insights
-- 🔍 Annotated product walkthroughs
-- 📈 Growth, retention, monetization, and trust analysis
-- 🚀 30-day execution roadmap
-- 🏗️ Product moat and competitive positioning analysis
+> Built by Raghav Agarwal &middot; May 2026 &middot; [Live Preview](https://raghav26102000.github.io/subspace-product-teardown)
 
 ---
 
-## Executive Summary
+## What This Is
 
-Subspace.money has built a compelling platform around subscription sharing and digital access management, solving a genuine consumer pain point while generating meaningful revenue through a transaction-driven marketplace.
+A full-stack product analysis of [Subspace.money](https://subspace.money), an Indian subscription-sharing marketplace generating &#8377;36.5 Cr in annual revenue. The teardown covers trust architecture, monetization mechanics, operational friction, user psychology, and growth constraints, backed by live app screenshots taken from a real account on May 29 to 30, 2026.
 
-The analysis explores:
-
-- Why the product works
-- Where users experience friction
-- Trust bottlenecks impacting conversion
-- Monetization opportunities
-- Retention mechanics and behavioral loops
-- Strategic positioning and product identity
-- Long-term defensibility against platform-native alternatives
+This is not a generic PM framework exercise. Every observation is tied to a specific screen, flow, or Play Store review. Every recommendation is shippable with low to medium engineering effort.
 
 ---
 
-## Key Areas Analyzed
+## What Is Covered
 
-### Product Positioning
-- Value proposition clarity
-- Product identity challenges
-- Market positioning
-- Competitive differentiation
-
-### User Journey
-- Discovery
-- Onboarding
-- Marketplace exploration
-- Checkout flow
-- Wallet experience
-- Renewal and retention
-
-### Trust Architecture
-- Marketplace trust systems
-- Admin reputation visibility
-- Escrow communication
-- Security signaling
-
-### Growth & Retention
-- Referral mechanics
-- Viral loops
-- Habit formation
-- User activation opportunities
-
-### Monetization
-- Premium positioning
-- Conversion friction
-- Revenue expansion opportunities
-
-### Product Strategy
-- Defensibility analysis
-- Competitive threats
-- Prioritization framework
-- Founder-level opportunities
+| Section | Description |
+|---|---|
+| Executive Summary | The 3.5-star problem in one paragraph |
+| ICP Analysis | Three distinct user segments with opposing incentives |
+| Market Positioning | Why "savings app" is the wrong frame |
+| Competitor Landscape | OTT platform risk, SplitGenie, CRED as trust benchmark |
+| User Journey Map | 7-step flow with friction tags |
+| Key Friction Points | 6 observed issues with screen evidence |
+| Product Moat Analysis | What is actually defensible vs. marketing |
+| Retention Mechanics | What works, what is broken, and why |
+| Growth Opportunities | Tiered across 0 to 6 months, 6 to 18 months, 18+ months |
+| Prioritization Matrix | 13 initiatives with P0 to P4 ranking, effort, and key metric |
+| 5 Core Feedbacks | Premium identity, trust at checkout, homepage auth wall, admin experience, product sprawl |
+| Microcopy Rewrites | 6 before and after rewrites with behavioral principle per change |
+| What Most Applicants Will Say | 5 shallow takes and why each is wrong |
+| Founder Insights | What actually matters to the business: GMV, AI Mailbox, Superflow, OTT risk window |
+| If I Joined Tomorrow | 4-week sprint with hypothesis-based impact estimates |
+| 30 Day Roadmap | Day-by-day plan with deliverables and success metrics |
+| High Risk / High Reward Ideas | AI subscription audit, savings social layer, Subspace for Teams, campus groups |
+| Metrics Framework | 10 metrics with context on why each one matters |
+| Appendix A | 12 annotated app screenshots |
+| Appendix B | Corrected competitive audit |
+| Appendix C | 10 Play Store reviews, filterable by theme |
+| Appendix D | 5 product ideas considered and rejected with reasoning |
 
 ---
 
-## Five Core Product Feedback Areas
+## The 5 Core Feedbacks
 
-### 1. Premium Identity & Conversion
-Repositioning Premium as a value-driven upgrade rather than a generic product SKU.
+**01 &mdash; Premium Has No Identity**
+The Premium product card displays "0.0M" subscribers on Subspace's own monetization product. This is textbook negative social proof on the monetization tier. Sold via "Add to Cart" like a Netflix group slot, with no contextual upgrade prompt, the tier has near-zero conversion.
 
-### 2. Checkout Trust Layer
-Surfacing existing trust infrastructure at the highest-anxiety moment in the user journey.
+**02 &mdash; Trust Signals Vanish at Checkout**
+Admin ratings (up to 5 stars with 1,790+ reviews) are visible in group listing. At checkout, all of that disappears. The admin with 1,790 reviews is just a name at the moment of highest anxiety. The fix costs zero new infrastructure. It is a placement decision.
 
-### 3. Homepage Discovery Experience
-Reducing friction by allowing users to evaluate the marketplace before authentication.
+**03 &mdash; The Homepage Is an Auth Wall**
+subspace.money loads with a login modal before showing any product value. A user searching "cheap Netflix India" sees nothing without signing in. The Explore tab with 145+ Netflix groups and live admin ratings is exactly what would convert a skeptical visitor, and it is locked behind auth.
 
-### 4. Admin Growth & Retention Engine
-Treating admins as a strategic supply-side asset rather than a standard user segment.
+**04 &mdash; The Admin Experience Is Underserved**
+Admins with 3-year track records and 1,790+ reviews have no dashboard, no automated payment reminders, and an account-blocking bug that punishes them for removing members who requested removal. One admin leaving equals four to five simultaneous member churn events.
 
-### 5. Product Hierarchy & Strategic Focus
-Reducing cognitive overload and clarifying the platform's primary value proposition.
-
----
-
-## Methodology
-
-The teardown intentionally separates observations into three categories:
-
-### Observed
-Directly verified through:
-- Product exploration
-- Live screenshots
-- Public product flows
-- Play Store listings
-- User reviews
-
-### Inferred
-Reasonable conclusions drawn from:
-- User behavior patterns
-- Marketplace dynamics
-- Product structure
-- Industry benchmarks
-
-### Hypothesized
-Strategic assumptions that would require internal product data validation.
-
-This distinction helps ensure that assumptions are not presented as facts.
+**05 &mdash; Multiple Businesses Fighting for the Same Screen**
+Six competing CTAs on the Home screen. Rental feature leads the Explore page above subscription groups. Five tabs at equal visual weight. Hick's Law in action. For a founding team of four managing active operational failures in May 2026, this surface area is an impossible trade-off.
 
 ---
 
-## Prioritization Framework
+## Key Observations Backed by Screenshots
 
-Each recommendation is evaluated using:
-
-- User Impact
-- Business Impact
-- Engineering Effort
-- Strategic Alignment
-- Expected ROI
-
-Initiatives are categorized as:
-
-### P0
-Immediate opportunities with high impact and low complexity.
-
-### P1
-Important growth and retention improvements.
-
-### P2
-Strategic bets with larger implementation requirements.
+| Screenshot | What It Proves |
+|---|---|
+| `sub premium.jpeg` | "0.0M" subscribers visible on Premium card |
+| `netflix group3.jpeg` | Admin rating missing at checkout despite existing in listing |
+| `Wallet.jpeg` | "Locked Amount" displayed in red, the escrow protection looks like a debt |
+| `home.jpeg` | 6 competing CTAs with no hierarchy toward core loop |
+| `Explore1.jpeg` | Rental feature leads Explore page above subscription groups |
+| `netflix group2.jpeg` | Admin trust infrastructure (5 stars, 1.79K reviews) exists in listing |
+| `money saved tab.jpeg` | Viral loop (Top Savers, Share button) buried at Account item 5 of 12 |
+| `ai mail box.jpeg` | AI Mailbox (@rylo.club) exists but is never surfaced at group-joining |
 
 ---
 
-## Repository Contents
+## Structure
 
-### 📄 Product Teardown Report
-Comprehensive teardown report containing:
-
-- Executive Summary
-- User Journey Analysis
-- Competitive Audit
-- Product Moat Analysis
-- 5 Core Feedback Areas
-- Prioritization Matrix
-- Product Roadmap
-- Strategic Recommendations
-
-### 🌐 Interactive HTML Version
-Interactive version featuring:
-
-- Navigation sidebar
-- Annotated screenshots
-- Product walkthroughs
-- Visual evidence for observations
-
-### 🖼 Supporting Screenshots
-Annotated screenshots highlighting:
-
-- Checkout trust gaps
-- Premium conversion issues
-- Homepage friction points
-- Wallet experience
-- Marketplace trust signals
-
----
-
-## Repository Structure
-
-```text
-.
-├── README.md
+```
+SUBSPACE/
+├── index.html    # Interactive report (open in browser)
 ├── Subspace_Product_Teardown_Raghav_Agrawal.pdf
-├── Interactive_HTML_Version/
-│   ├── index.html
-│   └── assets/
-└── screenshots/
+└── assets/
+    ├── home.jpeg
+    ├── Explore1.jpeg
+    ├── Explore2.jpeg
+    ├── netflix group.jpeg
+    ├── netflix group2.jpeg
+    ├── netflix group3.jpeg
+    ├── sub premium.jpeg
+    ├── Wallet.jpeg
+    ├── money saved tab.jpeg
+    ├── ai mail box.jpeg
+    ├── account.jpeg
+    ├── account1.jpeg
+    ├── chat.jpeg
+    ├── rating-1star.jpeg
+    ├── rating-1starII.jpeg
+    ├── rating-2star.jpeg
+    ├── rating-3star.jpeg
+    ├── rating-4star.jpeg
+    └── [annotated versions of key screens]
 ```
 
 ---
 
-## Why This Analysis Matters
+## How to View
 
-Many product reviews focus primarily on UI improvements.
+**Option 1 &mdash; Open the HTML file directly**
+Download `index.html` and open it in any browser. All images are embedded. No server required.
 
-This teardown focuses on:
+**Option 2 &mdash; GitHub Pages**
+Visit the live version at `https://raghav26102000.github.io/subspace-product-teardown`
 
-- User psychology
-- Trust systems
-- Conversion mechanics
-- Marketplace dynamics
-- Retention loops
-- Product strategy
-- Long-term competitive advantage
-
-The goal is not simply to identify problems, but to understand which problems matter most and why.
+**Option 3 &mdash; PDF**
+`Subspace.money-Product Teardown 2026.pdf` is a print-ready version of the full report.
 
 ---
 
-## Disclaimer
+## Interactive Features
 
-This analysis was created independently using publicly available information, product exploration, and publicly accessible user feedback.
-
-All strategic recommendations represent personal analysis and should be evaluated against internal product metrics and business context before implementation.
-
----
-
-## Author
-
-**Raghav Agrawal**
-
-Software Engineer & Product Enthusiast
-
-Interested in:
-
-- Product Strategy
-- AI & Automation
-- User Experience
-- Growth Systems
-- Data-Driven Decision Making
-
-### Connect
-
-- LinkedIn: https://www.linkedin.com/in/raghav-agrawal
-- GitHub: https://github.com/raghav26102000
+- Collapsible side navigation with active section tracking
+- Animated number counters on scroll
+- 3D phone gallery for app screenshots with drag-to-scroll
+- Click any annotated screenshot to open in fullscreen lightbox
+- Filterable Play Store review cards by theme
+- Scroll progress indicator
+- Fade-in section animations
+- Mouse parallax on cover
 
 ---
 
-⭐ If you found this teardown interesting, feel free to explore the report and interactive walkthrough.
+## Evidence Standards
+
+Every claim in this teardown is tagged with one of three evidence levels:
+
+- **Observed** &mdash; directly seen on subspace.money, Play Store listing, or from live app screenshots taken May 29 to 30, 2026
+- **Inferred** &mdash; derived from Play Store reviews, behavioral data from analogous products, and first-principles reasoning from product structure
+- **Hypothesized** &mdash; strategic reasoning about what is likely true, flagged explicitly. Impact estimates are directional hypotheses, not guarantees
+
+**Sources**
+
+| Data point | Source |
+|---|---|
+| &#8377;36.5 Cr annual revenue | Tracxn FY25 |
+| Team size and founders | Tracxn / LinkedIn |
+| App features and flows | Live account screenshots, May 2026 |
+| Play Store reviews | Google Play Store, latest version, 1 to 4 stars sampled |
+| App rating 3.5 stars | Play Store listing, May 2026 |
+| Competitor data | Public sources |
+
+---
+
+## About the Author
+
+**Raghav Agarwal** &mdash; Full Stack Engineer and aspiring Product Manager
+
+- GitHub: [@raghav26102000](https://github.com/raghav26102000)
+- LinkedIn: [linkedin.com/in/raghav-agarwal26](https://linkedin.com/in/raghav-agarwal26)
+
+Background in full-stack engineering (React, Next.js, FastAPI), GenAI and RAG systems, and data analytics. Currently exploring roles at the intersection of product, engineering, and growth.
+
+---
+
+*This teardown was prepared as a take-home product intern assignment in May 2026. All analysis is the author's own. Revenue figures are sourced from Tracxn and are publicly available.*
