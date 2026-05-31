@@ -2,7 +2,7 @@
 
 **A deep product teardown of India's subscription sharing platform, prepared as a take-home assignment for a Product Intern role.**
 
-> Built by Raghav Agarwal &middot; May 2026 &middot; [Live Preview](https://raghav26102000.github.io/subspace-product-teardown)
+> Built by Raghav Agarwal &middot; May 2026 &middot;
 
 ---
 
